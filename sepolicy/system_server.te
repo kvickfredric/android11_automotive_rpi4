@@ -1,0 +1,4 @@
+gpu_access(system_server)
+allow system_server self:capability sys_module;
+# Allow system_server to kill vehicle HAL
+allow system_server hal_vehicle_server:process sigkill;
